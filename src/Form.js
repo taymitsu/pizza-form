@@ -8,7 +8,6 @@ function Form() {
   const [Sausage, setSausage] = useState(false)
   const [Peppers, setPeppers] = useState(false)
   const [Onions, setOnions] = useState(false)
-  
   return (
     <div className="pizza-order-form">
       <h1>Pizza Order Form</h1>
@@ -50,6 +49,16 @@ function Form() {
         </label>
         <input className="submit" type="submit" value="Submit"/>
       </form>
+
+      <div className="results-left">
+        <h2>Your Order</h2>
+        { name }
+        {pepperoni &&<div>Pepperoni</div>}
+        {Sausage && <div>Sausage</div>}
+        {Peppers && <div>Peppers</div>}
+        {Onions && <div>Onions</div>}
+      </div>
+
     </div>
   )
 }
