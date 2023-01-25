@@ -1,0 +1,16 @@
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1rem;
+  
+}
+
+.Form > .submit {
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  padding: 0.5rem;
+  width: 10vh;
+}
